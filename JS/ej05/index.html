@@ -6,7 +6,25 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
   </head>
-  <body></body>
+  <body>
+    <h1 id="title_app">Alarma</h1>
+    <div>
+      <label for="segundos">Segundos</label>
+      <input
+        type="number"
+        id="segundos"
+        name="segundos"
+        min="1"
+        placeholder="Introduce segundos"
+      />
+    </div>
+    <button id="start">Iniciar cuenta atrás</button>
+    <div>
+      <button id="postpone">Posponer</button>
+      <button id="stop">Parar</button>
+    </div>
+    <h2 id="ring">⏰ Alarma sonando</h2>
+  </body>
+  <script src="ej05.js"></script>
 </html>
