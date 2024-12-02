@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+  </head>
+  <body>
+    <form action="/process_form" method="post" id="register">
+      <div>
+        <label for="nombre">Nombre</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Nombre"
+          required
+        />
+        <label for="apellidos">Apellidos</label>
+        <input
+          type="text"
+          id="apellidos"
+          name="apellidos"
+          placeholder="apellidos"
+        />
+      </div>
+      <fieldset>
+        <legend>Dirección</legend>
+        <label for="tipo_via">Tipo de vía: </label>
+        <input
+          type="text"
+          id="tipo_via"
+          name="tipo_via"
+          placeholder="tipo de via"
+        />
+
+        <label for="nombre_via">Nombre de la vía</label>
+        <input
+          type="text"
+          id="nombre_via"
+          name="nombre_via"
+          placeholder="nombre de la vía"
+        />
+
+        <label for="codigo_postal">Código postal</label>
+        <input
+          type="text"
+          id="codigo_postal"
+          name="codigo_postal"
+          placeholder="Código postal"
+        />
+
+        <label for="ciudad">Ciudad</label>
+        <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad" />
+
+        <label for="provincia">Provincia</label>
+        <input
+          type="text"
+          id="provincia"
+          name="provincia"
+          placeholder="Provincia"
+        />
+
+        <label for="pais">País</label>
+        <input type="text" id="pais" name="pais" placeholder="País" />
+      </fieldset>
+
+      <div>
+        <label for="fecha_nacimiento">Fecha de nacimiento</label>
+        <input
+          type="date"
+          id="fecha_nacimiento"
+          name="fecha_nacimiento"
+          placeholder="Fecha de nacimiento"
+        />
+      </div>
+
+      <div>
+        <label for="nota_media_uni">Nota media de la universidad</label>
+        <input
+          type="number"
+          id="nota_media_uni"
+          name="nota_media_uni"
+          step="0.1"
+          value="5"
+        />
+      </div>
+
+      <div>
+        <label for="numero_telefono">Número de teléfono</label>
+        <input
+          type="tel"
+          id="numero_telefono"
+          name="numero_telefono"
+          placeholder="600150150"
+          minlength="9"
+          maxlength="9"
+          required
+        />
+
+        <label for="correo_electronico">Correo electrónico</label>
+        <input
+          type="email"
+          id="correo_electronico"
+          name="correo_electronico"
+          placeholder="ejemplo@outlook.com"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="contrasena">Contraseña</label>
+        <input
+          type="email"
+          id="contrasena"
+          name="contrasena"
+          placeholder="contraseña de 6 caracteres mínimo"
+          minlength="6"
+        />
+
+        <label for="repetir_contrasena">Repetir contraseña</label>
+        <input
+          type="email"
+          id="repetir_contrasena"
+          name="repetir_contrasena"
+          placeholder="contraseña de 6 caracteres mínimo"
+          minlength="6"
+        />
+      </div>
+
+      <div>
+        Selecciona país:
+        <select name="pais_seleccionado">
+          <option value="espana" selected>España</option>
+          <option value="francia">Francia</option>
+          <option value="portugal">Portugal</option>
+          <option value="andorra">Andorra</option>
+        </select>
+      </div>
+
+      <div>
+        Selecciona tipo de cuenta
+        <select name="tipo_cuenta">
+          <option value="gratuita" title="Con anuncios">Gratuita</option>
+          <option value="basica" title="Un dispositivo">Básica</option>
+          <option value="premium" title="Varios dispositivos" selected>
+            Premium
+          </option>
+        </select>
+      </div>
+
+      <div>
+        <textarea placeholder="Sobre mi"></textarea>
+      </div>
+
+      <div>
+        <label for="foto_perfil">Foto de perfil:</label>
+        <input
+          type="file"
+          id="foto_perfil"
+          name="foto_perfil"
+          accept="image/*"
+        />
+
+        <label for="cv">CV:</label>
+        <input type="file" id="cv" name="cv" accept=".pdf, .doc, .docx" />
+      </div>
+
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+  <script src="ej07.js"></script>
+</html>
